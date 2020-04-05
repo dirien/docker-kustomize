@@ -9,7 +9,7 @@ resources:
 - repo: self
 
 variables:
-  tag: '3.5.4'
+  imagename: 'ediri/kustomize:3.5.4'
 
 stages:
 - stage: Build
@@ -30,4 +30,5 @@ stages:
         containerRegistry: 'dirien'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
-        tags: '$(tag)'
+        tags: '$(imagename)'
+    
