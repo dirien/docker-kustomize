@@ -9,7 +9,7 @@ resources:
 - repo: self
 
 variables:
-  tag: '3.5.5'
+  tag: '3.6.1'
 
 stages:
 - stage: Build
